@@ -1,0 +1,6 @@
+[submodule "themes/hermit"]
+	path = themes/hermit
+	url = https://github.com/Track3/hermit.git
+[submodule "src/themes/hermit"]
+	path = src/themes/hermit
+	url = https://github.com/Track3/hermit.git
