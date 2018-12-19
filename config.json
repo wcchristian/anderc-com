@@ -1,0 +1,71 @@
+{
+    "baseURL": "https://anderc.com",
+    "languageCode": "en-us",
+    "defaultContentLanguage": "en",
+    "title": "Christian Andersen",
+    "theme": "hermit",
+    "pygmentsCodefences": true,
+    "pygmentsUseClasses": true,
+    "hasCJKLanguage": true,
+    "enableRobotsTXT": true,
+    "rssLimit": 10,
+    "copyright": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.",
+    "enableEmoji": true,
+    "author": {
+        "name": "Christian Andersen"
+    },
+    "blackfriday": {
+        "hrefTargetBlank": true
+    },
+    "taxonomies": {
+        "tag": "tags",
+        "category": "categories"
+    },
+    "params": {
+        "dateform": "Jan 2, 2006",
+        "dateformShort": "Jan 2",
+        "dateformNum": "2006-01-02",
+        "dateformNumTime": "2006-01-02 15:04 -0700",
+        "homeSubtitle": "Developer.",
+        "footerCopyright": " &#183; <a hrefhttps://creativecommons.org/licenses/by-nc/4.0/",
+        "target": "_blank",
+        "rel": "noopener",
+        "CC BY-NC 4.0</a>'\njustifyContent": false,
+        "social": [
+            {
+                "name": "twitter",
+                "url": "https://twitter.com/wcchristian"
+            },
+            {
+                "name": "instagram",
+                "url": "https://instagram.com/wcchristian"
+            },
+            {
+                "name": "github",
+                "url": "https://github.com/wcchristian"
+            },
+            {
+                "name": "youtube",
+                "url": "https://www.youtube.com/channel/UC9elo26pfthgP96EA3GBzUA"
+            },
+            {
+                "name": "email",
+                "url": "mailto:anderc@protonmail.com"
+            }
+        ]
+    },
+    "menu": {
+        "main": [
+            {
+                "name": "Posts",
+                "url": "/posts/",
+                "weight": 10
+            },
+            {
+                "name": "About",
+                "url": "/about/",
+                "weight": 20
+            }
+        ]
+    }
+}
