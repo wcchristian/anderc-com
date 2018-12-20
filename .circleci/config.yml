@@ -36,9 +36,7 @@ jobs:
                   command: sudo pip install awscli
             - run:
                   name: Deploy to S3
-                  environment:
-                      S3_BUCKET: $BUCKET_URL
-                  command: aws s3 sync public s3://$S3_BUCKET
+                  command: aws s3 sync public s3://$BUCKET_URL
 
 workflows:
     version: 2
