@@ -12,7 +12,7 @@ jobs:
                   name: Build Site
                   command: './tools/hugo-linux'
 
-    build_artifact:
+    artifact:
         docker:
             - image: circleci/python
         steps:
