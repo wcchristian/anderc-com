@@ -1,0 +1,41 @@
+version: 2
+jobs:
+    build:
+        docker:
+            - image: circleci/node
+        steps:
+            - checkout
+            - run:
+                  name: Clean Repo
+                  command: 'rm -rf public'
+            - run:
+                  name: Build Site
+                  command: './tools/hugo-linux'
+
+    build_artifact:
+        docker:
+            - image: circleci/node
+        steps:
+            - checkout
+            - run:
+                  name: Clean Repo
+                  command: 'rm -rf public'
+            - run:
+                  name: Build Site
+                  command: './tools/hugo-linux'
+            - store_artifacts:
+                  path: builds
+                  prefix: public
+
+workflows:
+    version: 2
+    build:
+        jobs:
+            - build:
+                  filters:
+                      branches:
+                          ignore: master
+            - build_artifact:
+                  filters:
+                      branches:
+                          only: master
