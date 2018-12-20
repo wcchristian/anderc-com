@@ -35,8 +35,11 @@ jobs:
                   name: Install awscli
                   command: sudo pip install awscli
             - run:
+                  name: Setup Environment Variables
+                  command: echo 'export BUCKET="$BUCKET_URL"' >> $BASH_ENV
+            - run:
                   name: Deploy to S3
-                  command: aws s3 sync public s3://$BUCKET_URL
+                  command: aws s3 sync public s3://$BUCKET
 
 workflows:
     version: 2
