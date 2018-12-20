@@ -3,6 +3,7 @@ jobs:
     build:
         docker:
             - image: circleci/python
+        working_directory: ~/project
         steps:
             - checkout
             - run:
@@ -15,6 +16,7 @@ jobs:
     artifact:
         docker:
             - image: circleci/python
+        working_directory: ~/project
         steps:
             - store_artifacts:
                   path: ./public
