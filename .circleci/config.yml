@@ -23,7 +23,7 @@ jobs:
             - attach_workspace:
                   at: public
             - store_artifacts:
-                  path: ./workspace/public
+                  path: ./public
 
     # deploy:
     #     docker:
