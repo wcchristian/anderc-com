@@ -40,7 +40,7 @@ jobs:
             - run: echo $S3_BUCKET_URL
             - run:
                   name: Deploy to S3
-                  command: aws s3 sync public s3://anderc.com.s3-website-us-east-1.amazonaws.com
+                  command: aws s3 sync public s3://anderc.com
 
 workflows:
     version: 2
