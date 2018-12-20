@@ -24,7 +24,7 @@ jobs:
                   name: Build Site
                   command: './tools/hugo-linux'
             - store_artifacts:
-                  path: /public
+                  path: ./public
 
 workflows:
     version: 2
