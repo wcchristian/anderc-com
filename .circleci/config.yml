@@ -28,13 +28,15 @@ jobs:
     deploy:
         docker:
             - image: circleci/python
+        environment:
+            FOO: $S3_BUCKET_URL
         steps:
             - attach_workspace:
                   at: public
             - run:
                   name: Install awscli
                   command: sudo pip install awscli
-            - run: echo ${S3_BUCKET_URL}
+            - run: echo $FOO
             - run: echo $S3_BUCKET_URL
             - run:
                   name: Deploy to S3
