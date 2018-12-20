@@ -19,16 +19,16 @@ jobs:
             - store_artifacts:
                   path: ./public
 
-    deploy:
-        docker:
-            - image: circleci/python
-        steps:
-            - run:
-                  name: Install awscli
-                  command: sudo pip install awscli
-            - run:
-                  name: Deploy to S3
-                  command: aws s3 sync public s3://$BUCKET_URL
+    # deploy:
+    #     docker:
+    #         - image: circleci/python
+    #     steps:
+    #         - run:
+    #               name: Install awscli
+    #               command: sudo pip install awscli
+    #         - run:
+    #               name: Deploy to S3
+    #               command: aws s3 sync public s3://$BUCKET_URL
 
 workflows:
     version: 2
@@ -44,9 +44,9 @@ workflows:
                   filters:
                       branches:
                           only: master
-            - deploy:
-                  requires:
-                      - build
-                  filters:
-                      branches:
-                          only: master
+            # - deploy:
+            #       requires:
+            #           - build
+            #       filters:
+            #           branches:
+            #               only: master
