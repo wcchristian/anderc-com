@@ -3,7 +3,6 @@ jobs:
     build:
         docker:
             - image: circleci/python
-        working_directory: ~/project
         steps:
             - checkout
             - run:
@@ -12,14 +11,19 @@ jobs:
             - run:
                   name: Build Site
                   command: './tools/hugo-linux'
+            - persist_to_workspace:
+                  root: public
+                  paths:
+                      - ./*
 
     artifact:
         docker:
             - image: circleci/python
-        working_directory: ~/project
         steps:
+            - attach_workspace:
+                  at: public
             - store_artifacts:
-                  path: ./public
+                  path: ./workspace/public
 
     # deploy:
     #     docker:
