@@ -36,11 +36,9 @@ jobs:
             - run:
                   name: Install awscli
                   command: sudo pip install awscli
-            - run: echo $FOO
-            - run: echo $S3_BUCKET_URL
             - run:
                   name: Deploy to S3
-                  command: aws s3 sync public s3://anderc.com
+                  command: aws s3 sync public s3://$S3_BUCKET_URL
 
 workflows:
     version: 2
