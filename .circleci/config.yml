@@ -2,7 +2,7 @@ version: 2
 jobs:
     build:
         docker:
-            - image: circleci/node
+            - image: circleci/python
         steps:
             - checkout
             - run:
@@ -14,17 +14,21 @@ jobs:
 
     build_artifact:
         docker:
-            - image: circleci/node
+            - image: circleci/python
         steps:
-            - checkout
-            - run:
-                  name: Clean Repo
-                  command: 'rm -rf public'
-            - run:
-                  name: Build Site
-                  command: './tools/hugo-linux'
             - store_artifacts:
                   path: ./public
+
+    deploy:
+        docker:
+            - image: circleci/python
+        steps:
+            - run:
+                  name: Install awscli
+                  command: sudo pip install awscli
+            - run:
+                  name: Deploy to S3
+                  command: aws s3 sync public s3://$BUCKET_URL
 
 workflows:
     version: 2
@@ -34,7 +38,15 @@ workflows:
                   filters:
                       branches:
                           ignore: master
-            - build_artifact:
+            - artifact:
+                  requires:
+                      - build
+                  filters:
+                      branches:
+                          only: master
+            - deploy:
+                  requires:
+                      - build
                   filters:
                       branches:
                           only: master
