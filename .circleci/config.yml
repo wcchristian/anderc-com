@@ -38,7 +38,7 @@ jobs:
                   command: sudo pip install awscli
             - run:
                   name: Deploy to S3
-                  command: aws s3 sync public s3://$S3_BUCKET_URL
+                  command: aws s3 sync public s3://$S3_BUCKET_URL --delete
 
 workflows:
     version: 2
