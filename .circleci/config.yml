@@ -2,7 +2,7 @@ version: 2
 jobs:
     build:
         docker:
-            - image: mesosphere/aws-cli
+            - image: circleci/python
         steps:
             - checkout
             - run:
@@ -18,7 +18,7 @@ jobs:
 
     artifact:
         docker:
-            - image: mesosphere/aws-cli
+            - image: circleci/python
         steps:
             - attach_workspace:
                   at: public
@@ -27,7 +27,9 @@ jobs:
 
     deploy:
         docker:
-            - image: mesosphere/aws-cli
+            - image: circleci/python
+        environment:
+            FOO: $S3_BUCKET_URL
         steps:
             - attach_workspace:
                   at: public
@@ -53,6 +55,3 @@ workflows:
                   filters:
                       branches:
                           only: master
-#TODO: CRA cache things and make better
-#TODO: CRA Pull from github
-#TODO: CRA Set up domain for anderc.com and test deploy.
