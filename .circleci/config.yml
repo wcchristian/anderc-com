@@ -2,7 +2,7 @@ version: 2
 jobs:
     build:
         docker:
-            - image: circleci/python
+            - image: mesosphere/aws-cli
         steps:
             - checkout
             - run:
@@ -18,7 +18,7 @@ jobs:
 
     artifact:
         docker:
-            - image: circleci/python
+            - image: mesosphere/aws-cli
         steps:
             - attach_workspace:
                   at: public
@@ -27,16 +27,13 @@ jobs:
 
     deploy:
         docker:
-            - image: circleci/python
+            - image: mesosphere/aws-cli
         steps:
             - attach_workspace:
                   at: public
             - run:
-                  name: Install awscli
-                  command: sudo pip install awscli
-            - run:
                   name: Deploy to S3
-                  command: aws s3 sync public s3://${S3_BUCKET_URL}
+                  command: aws s3 sync public s3://anderc.com.s3-website-us-east-1.amazonaws.com
 
 workflows:
     version: 2
@@ -56,3 +53,6 @@ workflows:
                   filters:
                       branches:
                           only: master
+#TODO: CRA cache things and make better
+#TODO: CRA Pull from github
+#TODO: CRA Set up domain for anderc.com and test deploy.
