@@ -6,6 +6,7 @@
     "theme": "hermit",
     "pygmentsCodefences": true,
     "pygmentsUseClasses": true,
+    "googleAnalytics": "UA-46757863-4",
     "hasCJKLanguage": true,
     "enableRobotsTXT": true,
     "rssLimit": 10,
@@ -65,6 +66,16 @@
                 "name": "About",
                 "url": "/about/",
                 "weight": 20
+            },
+            {
+                "name": "Portfolio",
+                "url": "/portfolio/",
+                "weight": 30
+            },
+            {
+                "name": "Support",
+                "url": "/support/",
+                "weight": 40
             }
         ]
     }
