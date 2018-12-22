@@ -68,8 +68,8 @@
                 "weight": 20
             },
             {
-                "name": "Patreon",
-                "url": "https://www.patreon.com/bePatron?u=15913016",
+                "name": "Support",
+                "url": "/support/",
                 "weight": 30
             }
         ]
