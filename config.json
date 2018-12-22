@@ -68,9 +68,14 @@
                 "weight": 20
             },
             {
+                "name": "Portfolio",
+                "url": "/portfolio/",
+                "weight": 30
+            },
+            {
                 "name": "Support",
                 "url": "/support/",
-                "weight": 30
+                "weight": 40
             }
         ]
     }
