@@ -6,6 +6,7 @@
     "theme": "hermit",
     "pygmentsCodefences": true,
     "pygmentsUseClasses": true,
+    "googleAnalytics": "UA-46757863-4",
     "hasCJKLanguage": true,
     "enableRobotsTXT": true,
     "rssLimit": 10,
