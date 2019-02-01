@@ -21,6 +21,11 @@ I wrote a chrome extension that allows you to rename your chrome tabs.
 
 [Visit the Store Page](https://chrome.google.com/webstore/detail/chrome-tab-renamer/jbjkejjogkedpjendhaccnccmeiafied)
 
+## Riptide Website
+A website I built for my blues rock band Riptide.
+
+[Visit the site](https://riptidetheband.com)
+
 ---
 ## Contributions
 I have made code contributions to the following open source github repositories
