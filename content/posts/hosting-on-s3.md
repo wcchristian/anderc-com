@@ -72,6 +72,7 @@ If you can reach your site here, move on to generating the certificate.
 1. Click to create a new distribution
 1. Set Origin Domain Name to the endpoint listed in S3
 1. Set Viewer Protocol Policy to Redirect HTTP to HTTPS
+1. Ensure that cache is set up properly (Or you will have a tough time reloading and testing.)
 1. Set Altername Domain Names www.example.com and example.com (whatever your domain is.)
 1. Set SSL Certificate to Custom and select the certificate you generated in the certificate manager.
 1. Click to create the distribution and wait for it to be deployed. (When it is, try and access it via it's domain name)
