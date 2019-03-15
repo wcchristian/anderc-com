@@ -2,7 +2,7 @@ workflow "New workflow" {
   on = "project_column"
   resolves = [
     "GitHub Action for Slack",
-    "HTTP client",
+    "Close Issue",
   ]
 }
 
