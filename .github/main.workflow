@@ -12,8 +12,8 @@ action "GitHub Action for Slack" {
   args = "\"Test Message\""
 }
 
-action "Close issue" {
-  uses = "swinton/httpie.action@master"
+action "Close Issue" {
+  uses = "swinton/httpie.action@8ab0a0e926d091e0444fcacd5eb679d2e2d4ab3d"
   args = ["--auth-type=jwt", "--auth=$GITHUB_TOKEN", "PATCH", "`jq .url /github/home/Issue.response.body --raw-output`", "state=closed"]
   secrets = ["GITHUB_TOKEN"]
 }
