@@ -1,9 +1,9 @@
 workflow "New workflow" {
-  on = "project_column"
   resolves = [
     "GitHub Action for Slack",
     "Close Issue",
   ]
+  on = "project_card"
 }
 
 action "GitHub Action for Slack" {
