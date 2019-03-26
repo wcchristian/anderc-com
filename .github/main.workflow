@@ -1,6 +1,6 @@
 workflow "New workflow" {
-  on = "project_card"
   resolves = ["Build Hugo Site"]
+  on = "push"
 }
 
 action "Build Hugo Site" {
