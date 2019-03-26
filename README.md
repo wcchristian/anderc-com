@@ -1,6 +1,4 @@
-# Build Status
-
-[![CircleCI](https://circleci.com/gh/wcchristian/anderc-com/tree/master.svg?style=svg)](https://circleci.com/gh/wcchristian/anderc-com/tree/master)
+# Christian's Personal Site
 
 # Description
 
