@@ -17,7 +17,7 @@ action "Deploy to S3" {
   uses = "actions/aws/cli@efb074ae4510f2d12c7801e4461b65bf5e8317e6"
   needs = ["Filter: Master Branch"]
   secrets = ["AWS_ACCESS_KEY_ID", "AWS_SECRET_ACCESS_KEY", "ANDERC_S3_BUCKET_URL"]
-  args = "aws s3 sync public s3://$S3_BUCKET_URL --delete"
+  args = "s3 sync public s3://$S3_BUCKET_URL --delete"
   env = {
     FOO = "bar"
   }
