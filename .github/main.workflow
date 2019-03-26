@@ -31,5 +31,5 @@ action "GitHub Action for Slack" {
   uses = "Ilshidur/action-slack@4f4215e15353edafdc6d9933c71799e3eb4db61c"
   needs = ["Deploy to S3"]
   secrets = ["SLACK_WEBHOOK"]
-  args = "anderc.com build successful! Commit: $GITHUB_SHA"
+  args = "anderc.com build successful! Commit:{{ GITHUB_SHA }}"
 }
