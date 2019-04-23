@@ -41,5 +41,8 @@ workflow "On Issue Create" {
 
 action "wcchristian/gh-action-notion-card@master" {
   uses = "wcchristian/gh-action-notion-card@master"
-  secrets = ["NOTION_TOKEN", "COLLECTION_URL"]
+  secrets = [
+    "COLLECTION_URL",
+    "NOTION_TOKEN",
+  ]
 }
