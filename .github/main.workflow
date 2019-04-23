@@ -45,4 +45,5 @@ action "wcchristian/gh-action-notion-card@master" {
     "COLLECTION_URL",
     "NOTION_TOKEN",
   ]
+  runs = "$NOTION_TOKEN $COLLECTION_URL"
 }
