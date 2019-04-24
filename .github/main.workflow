@@ -34,11 +34,6 @@ action "GitHub Action for Slack" {
   args = "anderc.com build successful! Commit:{{ GITHUB_SHA }}"
 }
 
-workflow "On Issue Create" {
-  on = "issues"
-  resolves = ["wcchristian/gh-action-notion-card@master"]
-}
-
 action "wcchristian/gh-action-notion-card@master" {
   uses = "wcchristian/gh-action-notion-card@master"
   secrets = [
