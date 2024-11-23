@@ -68,4 +68,4 @@ jobs:
           # The name of the Pages project to upload to
           projectName: anderc-com
           # The directory of static assets to upload
-          directory: ./public
+          directory: ../public
