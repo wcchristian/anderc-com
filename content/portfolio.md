@@ -4,27 +4,19 @@ date: 2018-12-18T19:05:36-06:00
 draft: false
 ---
 # Public Projects
-Below is a list of my public projects
-
-## 112 on Broadway
-I built a website for The 112 on Broadway in Albert Lea, Minnesota. I'm working on version 2.0 (a full rewrite) very soon.
-
-[Visit the site](https://112onbroadway.com)
-
-## Alexa Christmas
-I built an Alexa app that allows you to wish Alexa a Merry Chritmas. Alexa will then tell you how to say Merry Christmas in another language
-
-[Visit the Store Page](https://www.amazon.com/anderc-Merry-Christmas/dp/B077F6T46R/ref=sr_1_4?s=digital-skills&ie=UTF8&qid=1545500954&sr=1-4&keywords=Merry+Christmas)
+Below is a list of a few of my public projects. You can find the rest on [Github](https://github.com/wcchristian)
 
 ## Chrome Tab Renamer
 I wrote a chrome extension that allows you to rename your chrome tabs.
 
 [Visit the Store Page](https://chrome.google.com/webstore/detail/chrome-tab-renamer/jbjkejjogkedpjendhaccnccmeiafied)
 
-## Riptide Website
-A website I built for my blues rock band Riptide.
+## Advent of Code
+Advent of code is a super cool project put on by [Eric Wastl](https://x.com/ericwastl). Programming puzzles for 25 days every December. I store all of my puzzles in the same repository each year.
+In the past I've changed up languages but mostly Kotlin and Python.
 
-[Visit the site](https://riptidetheband.com)
+[Visit Repository](https://github.com/wcchristian/advent-of-code)
+
 
 ---
 ## Contributions
@@ -33,26 +25,4 @@ I have made code contributions to the following open source github repositories
 [Javers](https://github.com/javers/javers)
 
 ---
-
-<!-- Prepare a container for your calendar. -->
-<script
-  src="https://cdn.rawgit.com/IonicaBizau/github-calendar/gh-pages/dist/github-calendar.min.js"
->
-</script>
-
-<!-- Optionally, include the theme (if you don't want to struggle to write the CSS) -->
-<link
-  rel="stylesheet"
-  href="https://cdn.rawgit.com/IonicaBizau/github-calendar/gh-pages/dist/github-calendar.css"
-/>
-
-<!-- Prepare a container for your calendar. -->
-<div class="calendar">
-    <!-- Loading stuff -->
-    Loading the data just for you.
-</div>
-
-<script>
-    new GitHubCalendar(".calendar", "wcchristian");
-</script>
 

@@ -7,7 +7,6 @@
     "description": "test",
     "pygmentsCodefences": true,
     "pygmentsUseClasses": true,
-    "googleAnalytics": "UA-46757863-4",
     "hasCJKLanguage": true,
     "enableRobotsTXT": true,
     "rssLimit": 10,
@@ -49,6 +48,10 @@
             {
                 "name": "youtube",
                 "url": "https://www.youtube.com/channel/UC9elo26pfthgP96EA3GBzUA"
+            },
+            {
+                "name": "twitch",
+                "url": "https://twitch.tv/wcchristian"
             },
             {
                 "name": "email",
