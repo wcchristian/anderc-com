@@ -60,5 +60,3 @@ jobs:
           projectName: anderc-com
           # The directory of static assets to upload
           directory: public
-          # Github token in order to make a deployment
-          gitHubToken: ${{ secrets.GITHUB_TOKEN }}
