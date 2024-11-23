@@ -14,4 +14,4 @@ I plan to use this blog as a platform to write about what I've been working on, 
 
 Hope you enjoy!
 
-Contact: anderc(at)protonmail(dot)com
+Contact: andersenchristian93(at)gmail(dot)com
