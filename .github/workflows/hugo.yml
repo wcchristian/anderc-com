@@ -28,7 +28,7 @@ defaults:
 
 jobs:
   # Build job
-  build:
+  build_deploy:
     runs-on: ubuntu-latest
     env:
       HUGO_VERSION: 0.128.0
