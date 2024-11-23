@@ -48,21 +48,6 @@ jobs:
             --minify \
             --baseURL "${{ steps.pages.outputs.base_url }}/"
 
-  cache:
-    runs-on: ubuntu-latest
-    needs: build
-    steps:
-      - name: Cache
-        uses: actions/cache@v4.1.2
-        with:
-          # A list of files, directories, and wildcard patterns to cache and restore
-          path: |
-            /home/runner/work
-          # An explicit key for restoring and saving the cache
-          key: main
-
-          
-
   deploy:
     runs-on: ubuntu-latest
     needs: build
@@ -79,4 +64,4 @@ jobs:
           # The name of the Pages project to upload to
           projectName: anderc-com
           # The directory of static assets to upload
-          directory: ../public
+          directory: public
